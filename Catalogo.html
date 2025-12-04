@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos - EcoMarket</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/catalogo-carrito.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header class="barra-navegacion">
+        <div class="contenedor contenido-nav">
+            <div class="logo">
+                <img src="Imagenes/Logo.png" alt="EcoMarket">
+            </div>
+            <nav>
+                <a href="Catalogo.html">Productos</a>
+                <a href="Inicio.html">Nosotros</a>
+                <a href="Contacto.html">Contacto</a>
+                <a href="Login.html" class="boton boton-blanco">Iniciar Sesión</a>
+                <a href="Registro.html" class="boton boton-verde">Registrarse</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Encabezado del catálogo -->
+    <section class="encabezado-catalogo">
+        <div class="contenedor">
+            <h1>Nuestro Catálogo</h1>
+            <p>Explora nuestra selección de productos frescos y de calidad</p>
+        </div>
+    </section>
+
+    <!-- Catálogo de productos -->
+    <section class="catalogo contenedor">
+        <!-- Filtros y búsqueda -->
+        <div class="filtros">
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar productos...">
+            </div>
+        </div>
+
+        <!-- Rejilla de productos -->
+        <div class="rejilla-catalogo">
+            <!-- Producto 1: Tomates -->
+            <div class="tarjeta-producto-catalogo">
+                <img src="Imagenes/Tomates.png" alt="Tomates" class="imagen-producto">
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Tomates</h3>
+                    <p class="precio-producto">S/ 2.50 x Kg</p>
+                    <span class="estado-producto disponible">Disponible</span>
+                    <button class="boton-producto boton-agregar">
+                        <img src="Imagenes/Icono_Cesta.png" alt="Carrito" class="icono-boton">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 2: Fresas -->
+            <div class="tarjeta-producto-catalogo">
+                <img src="Imagenes/Fresas.png" alt="Fresas" class="imagen-producto">
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Fresas</h3>
+                    <p class="precio-producto">S/ 5.00 x Kg</p>
+                    <span class="estado-producto disponible">Disponible</span>
+                    <button class="boton-producto boton-agregar">
+                        <img src="Imagenes/Icono_Cesta.png" alt="Carrito" class="icono-boton">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 3: Pan Integral -->
+            <div class="tarjeta-producto-catalogo">
+                <img src="Imagenes/Pan_Integral.png" alt="Pan Integral" class="imagen-producto">
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Pan Integral</h3>
+                    <p class="precio-producto">S/ 2.00 x Unidad</p>
+                    <span class="estado-producto disponible">Disponible</span>
+                    <button class="boton-producto boton-agregar">
+                        <img src="Imagenes/Icono_Cesta.png" alt="Carrito" class="icono-boton">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 4: Pescado Fresco -->
+            <div class="tarjeta-producto-catalogo">
+                <img src="Imagenes/Pescado_Fresco.png" alt="Pescado Fresco" class="imagen-producto">
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Pescado Fresco</h3>
+                    <p class="precio-producto">S/ 16.90 x Kg</p>
+                    <span class="estado-producto agotado">Agotado</span>
+                    <button class="boton-producto boton-no-disponible" disabled>
+                        <img src="Imagenes/Icono_CestaAgotada.png" alt="Carrito Agotado" class="icono-boton">
+                        No disponible
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 5: Yogur Griego -->
+            <div class="tarjeta-producto-catalogo">
+                <img src="Imagenes/Yogur_Griego.png" alt="Yogur Griego" class="imagen-producto">
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Yogur Griego</h3>
+                    <p class="precio-producto">S/ 2.50 x Unidad</p>
+                    <span class="estado-producto disponible">Disponible</span>
+                    <button class="boton-producto boton-agregar">
+                        <img src="Imagenes/Icono_Cesta.png" alt="Carrito" class="icono-boton">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 6: Cebolla Roja -->
+            <div class="tarjeta-producto-catalogo">
+                <img src="Imagenes/Cebolla_Roja.png" alt="Cebolla Roja" class="imagen-producto">
+                <div class="info-producto">
+                    <h3 class="nombre-producto">Cebolla Roja</h3>
+                    <p class="precio-producto">S/ 3.79 x Kg</p>
+                    <span class="estado-producto disponible">Disponible</span>
+                    <button class="boton-producto boton-agregar">
+                        <img src="Imagenes/Icono_Cesta.png" alt="Carrito" class="icono-boton">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor rejilla-pie">
+        <div>
+            <h3>EcoMarket</h3>
+            <ul>
+            <li><a href="Inicio.html">Sobre nosotros</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Ayuda</h3>
+            <ul>
+            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <li><a href="devoluciones.html">Política de Devoluciones</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Legal</h3>
+            <ul>
+            <li><a href="Terminos_Condiciones.html">Términos y Condiciones</a></li>
+            <li><a href="Polit_Privac.html">Políticas de Privacidad</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Síguenos</h3>
+            <div class="iconos-redes">
+            <a href="#"><img src="Imagenes/Icono_Facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="Imagenes/Icono_Instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="Imagenes/Icono_X.png" alt="X"></a>
+            </div>
+        </div>
+        </div>
+        <div class="copy">&copy; 2025 EcoMarket. Todos los derechos reservados.</div>
+    </footer>
+
+    <script src="catalogo.js"></script>
+</body>
+</html>

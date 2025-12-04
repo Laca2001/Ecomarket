@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utilidades */
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Botones */
+.boton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.boton-verde {
+  background: #059669;
+  color: white;
+}
+
+.boton-verde:hover {
+  background: #047857;
+}
+
+.boton-blanco {
+  background: white;
+  color: #059669;
+}
+
+.boton-blanco:hover {
+  background: #f3f4f6;
+}
+
+/* Iconos */
+.icono {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* Barra de navegación */
+.barra-navegacion {
+  background: #047857;
+  color: white;
+  padding: 1rem 0;
+}
+
+.contenido-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.contenido-nav nav a {
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.contenido-nav nav a:hover {
+  color: #d1fae5;
+}
+
+/* Portada */
+.portada {
+  position: relative;
+  height: 400px;
+}
+
+.fondo-portada {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capa-portada {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.capa-portada h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.capa-portada p {
+  margin-bottom: 1.5rem;
+}
+
+.botones-portada a {
+  margin: 0 0.5rem;
+}
+
+/* Bienvenida */
+.bienvenida {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.bienvenida img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Productos */
+.productos {
+  background: #f9fafb;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.productos h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.rejilla-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tarjeta-producto {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 250ms;
+}
+
+.tarjeta-producto img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta-producto h3 {
+  margin-bottom: 0.3rem;
+}
+
+.tarjeta-producto:hover {
+  transform: scale(1.05);
+}
+
+/* Información (horarios y ubicación) */
+.informacion {
+  background: #ecfdf5;
+  padding: 3rem 1rem;
+}
+
+.rejilla-informacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.informacion h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.8rem;
+}
+
+/* Llamada a la acción */
+
+.accion {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.accion h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.accion p {
+  margin-bottom: 1.5rem;
+}
+
+/* Pie de página */
+.pie-pagina {
+  background: #047857;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.rejilla-pie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.pie-pagina h3 {
+  margin-bottom: 0.8rem;
+}
+
+.pie-pagina ul {
+  list-style: none;
+}
+
+.pie-pagina ul li {
+  margin-bottom: 0.4rem;
+}
+
+.pie-pagina a {
+  color: white;
+}
+
+.pie-pagina a:hover {
+  text-decoration: underline;
+}
+
+.iconos-redes {
+  display: flex;
+  gap: 12px;
+}
+
+.iconos-redes img {
+  width: 28px;
+  height: 28px;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 1rem;
+}

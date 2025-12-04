@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Cliente - EcoMarket</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/cliente.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header class="barra-navegacion">
+        <div class="contenedor contenido-nav">
+            <div class="logo">
+                <img src="Imagenes/Logo.png" alt="EcoMarket">
+            </div>
+            <nav>
+                <a href="Catalogo.html">Productos</a>
+                <a href="Inicio.html">Nosotros</a>
+                <a href="Contacto.html">Contacto</a>
+                <a href="Login.html" class="boton boton-blanco">Cerrar Sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Encabezado del panel -->
+    <section class="encabezado-panel">
+        <div class="contenedor">
+            <h1>Mi Panel</h1>
+            <p class="bienvenida-usuario">Bienvenido(a), Carmen</p>
+        </div>
+    </section>
+
+    <!-- Contenido principal del panel -->
+    <section class="contenido-panel contenedor">
+        <div class="rejilla-panel">
+            <!-- Columna izquierda: Información del perfil y estados de pedido -->
+            <div class="columna-izquierda">
+                <!-- Información del perfil -->
+                <div class="tarjeta-panel">
+                    <h2>Información del Perfil</h2>
+                    <div class="info-perfil">
+                        <div class="campo-perfil">
+                            <label>Nombre Completo</label>
+                            <p>Carmen Críales</p>
+                        </div>
+                        <div class="campo-perfil">
+                            <label>Teléfono</label>
+                            <p>+51 999 999 999</p>
+                        </div>
+                        <div class="campo-perfil">
+                            <label>Correo Electrónico</label>
+                            <p>carmencriales@gmail.com</p>
+                        </div>
+                        <div class="campo-perfil">
+                            <label>Dirección Principal</label>
+                            <p>Calle Los Incas 123, Santiago de Surco</p>
+                        </div>
+                    </div>
+                    <button class="boton boton-verde boton-editar">Editar Información</button>
+                </div>
+
+                <!-- Estados de pedido -->
+                <div class="tarjeta-panel">
+                    <h2>Pedidos Activos</h2>
+                    <div class="lista-pedidos">
+                        <div class="item-pedido">
+                            <div class="info-pedido">
+                                <span class="numero-pedido">Pedido #25</span>
+                                <span class="estado-pedido en-preparacion">En Preparación</span>
+                            </div>
+                            <div class="detalle-pedido">
+                                <small>Estimado: Hoy 6:00 PM</small>
+                            </div>
+                        </div>
+                        <div class="item-pedido">
+                            <div class="info-pedido">
+                                <span class="numero-pedido">Pedido #24</span>
+                                <span class="estado-pedido entregado">Entregado</span>
+                            </div>
+                            <div class="detalle-pedido">
+                                <small>Entregado: 12 Ago 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha: Historial de compras -->
+            <div class="columna-derecha">
+                <div class="tarjeta-panel">
+                    <h2>Historial de Compras</h2>
+                    <div class="lista-historial">
+                        <div class="item-historial">
+                            <div class="info-historial">
+                                <span class="numero-pedido">Pedido #24</span>
+                                <span class="fecha-pedido">12 de Agosto, 2025</span>
+                            </div>
+                            <span class="monto-pedido">S/ 15.60</span>
+                        </div>
+                        <div class="item-historial">
+                            <div class="info-historial">
+                                <span class="numero-pedido">Pedido #23</span>
+                                <span class="fecha-pedido">10 de Agosto, 2025</span>
+                            </div>
+                            <span class="monto-pedido">S/ 20.00</span>
+                        </div>
+                        <div class="item-historial">
+                            <div class="info-historial">
+                                <span class="numero-pedido">Pedido #22</span>
+                                <span class="fecha-pedido">5 de Agosto, 2025</span>
+                            </div>
+                            <span class="monto-pedido">S/ 11.79</span>
+                        </div>
+                        <div class="item-historial">
+                            <div class="info-historial">
+                                <span class="numero-pedido">Pedido #21</span>
+                                <span class="fecha-pedido">1 de Agosto, 2025</span>
+                            </div>
+                            <span class="monto-pedido">S/ 18.45</span>
+                        </div>
+                        <div class="item-historial">
+                            <div class="info-historial">
+                                <span class="numero-pedido">Pedido #20</span>
+                                <span class="fecha-pedido">28 de Julio, 2025</span>
+                            </div>
+                            <span class="monto-pedido">S/ 14.20</span>
+                        </div>
+                    </div>
+                    <button class="boton boton-ver-todo">Ver todo el historial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor rejilla-pie">
+            <div>
+                <h3>EcoMarket</h3>
+                <ul>
+                    <li><a href="Inicio.html">Sobre nosotros</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="devoluciones.html">Política de Devoluciones</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="Terminos_Condiciones.html">Términos y Condiciones</a></li>
+                    <li><a href="Polit_Privac.html">Políticas de Privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Síguenos</h3>
+                <div class="iconos-redes">
+                    <a href="#"><img src="Imagenes/Icono_Facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="Imagenes/Icono_Instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="Imagenes/Icono_X.png" alt="X"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copy">&copy; 2025 EcoMarket. Todos los derechos reservados.</div>
+    </footer>
+
+    <script src="cliente.js"></script>
+</body>
+</html>

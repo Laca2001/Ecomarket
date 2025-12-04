@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - EcoMarket</title>
+    <link rel="stylesheet" href="CSS/estilos.css"> 
+    <link rel="stylesheet" href= "CSS/catalogo-carrito.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header class="barra-navegacion">
+        <div class="contenedor contenido-nav">
+            <div class="logo">
+                <img src="Imagenes/Logo.png" alt="EcoMarket">
+            </div>
+            <nav>
+                <a href="Catalogo.html">Productos</a>
+                <a href="Inicio.html">Nosotros</a>
+                <a href="Contacto.html">Contacto</a>
+                <a href="Login.html" class="boton boton-blanco">Iniciar Sesión</a>
+                <a href="Registro.html" class="boton boton-verde">Registrarse</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Encabezado del carrito -->
+    <section class="encabezado-carrito">
+        <div class="contenedor">
+            <h1>Tu Carrito</h1>
+        </div>
+    </section>
+
+    <!-- Contenido del carrito -->
+    <section class="contenido-carrito contenedor">
+        <div class="rejilla-carrito">
+            <!-- Tabla de productos -->
+            <div class="tabla-carrito">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="Imagenes/Tomates.png" alt="Tomates" class="imagen-producto-carrito">
+                            </td>
+                            <td>Tomates</td>
+                            <td>
+                                <div class="contador-cantidad">
+                                    <button class="boton-contador">-</button>
+                                    <span>2</span>
+                                    <button class="boton-contador">+</button>
+                                </div>
+                            </td>
+                            <td>S/ 2.50</td>
+                            <td>S/ 5.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="Imagenes/Yogur_Griego.png" alt="Yogur Griego" class="imagen-producto-carrito">
+                            </td>
+                            <td>Yogur Griego</td>
+                            <td>
+                                <div class="contador-cantidad">
+                                    <button class="boton-contador">-</button>
+                                    <span>1</span>
+                                    <button class="boton-contador">+</button>
+                                </div>
+                            </td>
+                            <td>S/ 2.50</td>
+                            <td>S/ 2.50</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="Imagenes/Cebolla_Roja.png" alt="Cebollas Rojas" class="imagen-producto-carrito">
+                            </td>
+                            <td>Cebollas Rojas</td>
+                            <td>
+                                <div class="contador-cantidad">
+                                    <button class="boton-contador">-</button>
+                                    <span>1</span>
+                                    <button class="boton-contador">+</button>
+                                </div>
+                            </td>
+                            <td>S/ 3.79</td>
+                            <td>S/ 3.79</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Resumen del pedido -->
+            <div class="resumen-pedido">
+                <h2>Resumen del Pedido</h2>
+                <div class="detalles-resumen">
+                    <div class="fila-resumen">
+                        <span>Subtotal</span>
+                        <span>S/ 11.29</span>
+                    </div>
+                    <div class="fila-resumen">
+                        <span>Envío</span>
+                        <span>Gratis</span>
+                    </div>
+                    <div class="fila-resumen total">
+                        <span>Total</span>
+                        <span>S/ 11.29</span>
+                    </div>
+                </div>
+                <button class="boton boton-verde boton-confirmar">Confirmar Pedido</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor rejilla-pie">
+            <div>
+                <h3>EcoMarket</h3>
+                <ul>
+                    <li><a href="Inicio.html">Sobre nosotros</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="devoluciones.html">Política de Devoluciones</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="Terminos_Condiciones.html">Términos y Condiciones</a></li>
+                    <li><a href="Polit_Privac.html">Políticas de Privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Síguenos</h3>
+                <div class="iconos-redes">
+                    <a href="#"><img src="Imagenes/Icono_Facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="Imagenes/Icono_Instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="Imagenes/Icono_X.png" alt="X"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copy">&copy; 2025 EcoMarket. Todos los derechos reservados.</div>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

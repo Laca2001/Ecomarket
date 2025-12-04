@@ -1,0 +1,240 @@
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utilidades */
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Botones */
+.boton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.boton-verde {
+  background: #059669;
+  color: white;
+}
+
+.boton-verde:hover {
+  background: #047857;
+}
+
+.boton-blanco {
+  background: white;
+  color: #059669;
+}
+
+.boton-blanco:hover {
+  background: #f3f4f6;
+}
+
+.boton-gris {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.boton-azul {
+  background: #3b82f6;
+  color: white;
+}
+
+.boton-rojo {
+  background: #dc2626;
+  color: white;
+}
+
+/* Barra de navegación */
+.barra-navegacion {
+  background: #047857;
+  color: white;
+  padding: 1rem 0;
+}
+
+.contenido-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Estadísticas */
+.rejilla-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tarjeta-stat {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.stat-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #059669;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.stat-valor {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Formulario */
+.formulario {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.rejilla-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.campo-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.campo-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Lista de Productos */
+.lista-productos {
+  display: grid;
+  gap: 1rem;
+}
+
+.tarjeta-producto {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.producto-info h3 {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.producto-categoria {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.stock-info {
+  margin-top: 0.5rem;
+}
+
+.stock-bajo {
+  color: #dc2626;
+}
+
+.stock-ok {
+  color: #059669;
+}
+
+.acciones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.boton-icono {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+.pie-pagina {
+  background: #047857;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.mensaje-vacio {
+  background: white;
+  padding: 3rem;
+  border-radius: 10px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.centrado {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tarjeta-producto {
+    grid-template-columns: 1fr;
+  }
+  
+  .contenido-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

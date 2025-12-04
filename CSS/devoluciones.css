@@ -1,0 +1,70 @@
+/* Encabezado */
+.encabezado-devoluciones {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #ecfdf5;
+}
+
+.encabezado-devoluciones h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #047857;
+}
+
+.encabezado-devoluciones p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+}
+
+/* Contenido */
+.devoluciones-contenido {
+  padding: 3rem 1rem;
+}
+
+.devol-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.devol-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #047857;
+}
+
+.devol-item p {
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.devol-item ul,
+.devol-item ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.devol-item li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .encabezado-devoluciones h1 {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .encabezado-devoluciones h1 {
+      font-size: 1.7rem;
+  }
+  .devol-item {
+      padding: 1.5rem;
+  }
+}

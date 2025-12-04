@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMarket - Gestión de Inventario</title>
+  <link rel="stylesheet" href="Gestion_Inventario.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <header class="barra-navegacion">
+    <div class="contenedor contenido-nav">
+      <div class="logo">
+        <img src="Logo.png" alt="EcoMarket">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          
+        </svg>
+        
+      </div>
+      <span>Gestión de Inventario</span>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <div class="contenedor" style="padding: 2rem 1rem;">
+    
+    <!-- Estadísticas -->
+    <div class="rejilla-stats">
+      <div class="tarjeta-stat">
+        <div class="stat-header">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          </svg>
+          <span>Productos en Stock</span>
+        </div>
+        <div class="stat-valor" id="total-stock">0</div>
+      </div>
+
+      <div class="tarjeta-stat">
+        <div class="stat-header">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          <span>Ventas Totales</span>
+        </div>
+        <div class="stat-valor" id="total-ventas">S/ 0.00</div>
+      </div>
+
+      <div class="tarjeta-stat">
+        <div class="stat-header">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+          <span>Ganancias Netas</span>
+        </div>
+        <div class="stat-valor" id="total-ganancias">S/ 0.00</div>
+      </div>
+    </div>
+
+    <!-- Botón Agregar -->
+    <div class="centrado">
+      <button class="boton boton-verde" onclick="toggleFormulario()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+        <span id="btn-texto">Agregar Producto</span>
+      </button>
+    </div>
+
+    <!-- Formulario (oculto inicialmente) -->
+    <div id="formulario" class="formulario" style="display: none;">
+      <h2 style="margin-bottom: 1.5rem; color: #047857;" id="form-titulo">Nuevo Producto</h2>
+      <div class="rejilla-form">
+        <div class="campo-form">
+          <label>Nombre del Producto *</label>
+          <input type="text" id="nombre" placeholder="Ej: Manzanas orgánicas">
+        </div>
+        <div class="campo-form">
+          <label>Categoría *</label>
+          <input type="text" id="categoria" placeholder="Ej: Frutas">
+        </div>
+        <div class="campo-form">
+          <label>Precio de Venta (S/) *</label>
+          <input type="number" step="0.01" id="precio" placeholder="0.00">
+        </div>
+        <div class="campo-form">
+          <label>Costo (S/) *</label>
+          <input type="number" step="0.01" id="costo" placeholder="0.00">
+        </div>
+        <div class="campo-form">
+          <label>Stock Inicial *</label>
+          <input type="number" id="stock" placeholder="0">
+        </div>
+      </div>
+      <div style="display: flex; gap: 1rem;">
+        <button class="boton boton-verde" onclick="guardarProducto()">
+          <span id="btn-guardar">Agregar Producto</span>
+        </button>
+        <button class="boton boton-gris" onclick="cancelarForm()">Cancelar</button>
+      </div>
+    </div>
+
+    <!-- Lista de Productos -->
+    <div>
+      <h2 style="margin-bottom: 1.5rem; color: #047857;">Inventario de Productos</h2>
+      <div id="lista-productos" class="lista-productos">
+        <div class="mensaje-vacio">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem; opacity: 0.5;">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          </svg>
+          <p>No hay productos en el inventario. ¡Agrega tu primer producto!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="pie-pagina">
+    <p>© 2025 EcoMarket - Sistema de Gestión de Inventario</p>
+  </footer>
+
+  <script src="Inventario.js"></script>
+</body>
+</html>
